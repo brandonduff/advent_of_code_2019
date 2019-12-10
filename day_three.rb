@@ -1,147 +1,118 @@
-class DayThree
-  attr_reader :input, :current_position, :first_count, :second_count
-
-  def initialize input
-    @input = input
-    @current_position = origin
-    @first_count = 0
-    @second_count = 0
-  end
-
-  def find_answer
-    advance until finished?
-  end
-
-  def advance
-    @current_position = advanceable_neighbors.detect(-> { raise 'no valid neighbors' }) { |p| p.wire? }
-    bump_count
-    @current_position.visited
-    if @current_position.intersection?
-      @current_position = origin
-      @finished = true if @first_found
-      @first_found = true
-    end
-  end
-
-  def origin
-    board.detect { |p| p.origin? }
-  end
-
-  def board
-    @board ||= Board.new input
-  end
-
-  def advanceable_neighbors
-    neighbors = board.neighbors @current_position
-    neighbors.reject { |neighbor| neighbor.visited? }
-  end
-
-  def finished?
-    @finished
-  end
-
-  def answer
-    [first_count, second_count].min
-  end
-
-  private
-
-  def bump_count
-    if @first_found
-      @second_count += 1
-    else
-      @first_count += 1
-    end
+class String
+  def to_instruction
+    Instruction.new(chr, self[1..length].to_i)
   end
 end
 
-class Board
-  attr_reader :input
+class DayThree
+  def initialize(input)
+    @input = input.split "\n"
+  end
+
+  def solution
+    intersections.map(&:manhattan_distance).min
+  end
+
+  def complex_solution
+    intersections.map do |intersection|
+      first_board.steps_taken(intersection) + second_board.steps_taken(intersection)
+    end.min
+  end
+
+  def intersections
+    first_board.intersections_with second_board
+  end
+
+  def first_board
+    @first_board ||= new_board @input.first
+  end
+
+  def second_board
+    @second_board ||= new_board @input.last
+  end
+
+  def new_board instruction_input
+    WirePositions.new instruction_input.split(",").map(&:to_instruction)
+  end
+end
+
+class Instruction
+  attr_reader :direction, :magnitude
+
+  def initialize direction, magnitude
+    @direction = direction
+    @magnitude = magnitude
+  end
+end
+
+class WirePositions
+  attr_reader :instructions
   include Enumerable
 
-  def initialize input
-    @input = input
+  def initialize instructions
+    @instructions = instructions
   end
 
-  def each(&block)
-    elements.each(&block)
+  def each &block
+    plotted_points.each &block
   end
 
-  def rows
-    input.split "\n"
+  def intersections_with other_board
+    intersections = plotted_points & other_board.plotted_points
+    intersections.drop_while.with_index { |p, i| p == plotted_points.entries[i] }
   end
 
-  def column_length
-    rows.first.chars.length
+  def steps_taken point
+    find_index { |p| p == point }
   end
 
-  def neighbors board_cell
-    select { |cell| board_cell.position.neighbors.include? cell.position }
-  end
+  protected
 
-  def elements
-    @elements ||= rows.map.with_index do |row, row_num|
-      row.chars.map.with_index do |cell, cell_num|
-        BoardCell.new row_num, cell_num, cell
+  def plotted_points
+    @plotted_points ||= instructions.each_with_object([Point.new(0, 0)]) do |instruction, points|
+      (0...instruction.magnitude).each do
+        points << points.last + instruction
       end
-    end.flatten
-  end
-end
-
-class BoardCell
-  attr_reader :char, :position
-
-  def initialize x, y, char = "."
-    @char = char
-    @position = Point.new x, y
-  end
-
-  def origin?
-    char == "O"
-  end
-
-  def wire?
-    %w(| + - X).include? char
-  end
-
-  def intersection?
-    char == 'X'
-  end
-
-  def visited?
-    @visited
-  end
-
-  def visited
-    @visited = true
-  end
-
-  def == other
-    position == other.position && char == other.char
+    end
   end
 end
 
 class Point
-  attr_reader :x, :y
+  attr_reader :x, :y, :steps_taken
 
   def initialize x, y
     @x = x
     @y = y
   end
 
-  def == other
-    other.x == x &&
-        other.y == y
+  def + instruction
+    new_x, new_y =
+      case instruction.direction
+      when "R"
+        [x + 1, y]
+      when "U"
+        [x, y + 1]
+      when "L"
+        [x - 1, y]
+      when "D"
+        [x, y - 1]
+      end
+
+    self.class.new new_x, new_y
   end
 
-  def neighbors
-    [
-        self.class.new(x - 1, y),
-        self.class.new(x + 1, y),
-        self.class.new(x, y - 1),
-        self.class.new(x, y + 1)
-    ]
+  def hash
+    x.hash ^ y.hash
+  end
+
+  def == other
+    return false unless other.is_a?(self.class)
+    x == other.x && y == other.y
+  end
+
+  alias_method :eql?, :==
+
+  def manhattan_distance
+    x.abs + y.abs
   end
 end
-
-
