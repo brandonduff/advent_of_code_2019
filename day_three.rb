@@ -63,7 +63,7 @@ class WirePositions
   end
 
   def steps_taken point
-    find_index { |p| p == point }
+    point.index self
   end
 
   protected
@@ -83,6 +83,10 @@ class Point
   def initialize x, y
     @x = x
     @y = y
+  end
+
+  def index board
+    @index ||= board.find_index { |p| p == self }
   end
 
   def + instruction
