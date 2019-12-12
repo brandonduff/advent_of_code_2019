@@ -40,6 +40,7 @@ INPUT
   end
 
   def test_first_input
+    skip
     subject = DayThree.new(File.read('day_three_part_one.txt'))
     subject.solution
   end
@@ -68,6 +69,7 @@ U98,R91,D20,R16,D67,R40,U7,R15,U6,R7
   end
 
   def test_second_input
+    skip
     subject = DayThree.new(File.read('day_three_part_one.txt'))
     p subject.complex_solution
   end

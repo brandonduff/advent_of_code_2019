@@ -21,7 +21,8 @@ class DayFourTest < Minitest::Test
   end
 
   def test_puzzle_input
-    p Counter.count("193651", "649729")
+    skip
+    Counter.count("193651", "649729")
   end
 
   def test_complex_valid
