@@ -1,5 +1,15 @@
-class DayTwo
-  def self.call(input)
+class IntCodeComputer
+  attr_reader :input
+
+  def self.process(input)
+    new(input).process
+  end
+
+  def initialize(input)
+    @input = input
+  end
+
+  def process
     input.each_slice(4).with_object(input) do |(op_code, first_operand_index, second_operand_index, store_location), result|
       break result if operations[op_code] == :exit
 
@@ -7,7 +17,7 @@ class DayTwo
     end
   end
 
-  def self.operations
+  def operations
     {
       1 => :+,
       2 => :*,

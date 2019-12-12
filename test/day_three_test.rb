@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'day_three'
+require 'day_three'
 
 class DayThreeTest < Minitest::Test
   def test_logging_points

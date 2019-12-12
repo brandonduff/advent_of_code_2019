@@ -1,4 +1,4 @@
-require_relative 'day_four'
+require 'day_four'
 require 'minitest/autorun'
 
 class DayFourTest < Minitest::Test
@@ -25,7 +25,7 @@ class DayFourTest < Minitest::Test
   end
 
   def test_complex_valid
-    assert Tester.valid_complex?("111122")
-    refute Tester.valid_complex?("123444")
+    assert Tester.valid?("111122")
+    refute Tester.valid?("123444")
   end
 end

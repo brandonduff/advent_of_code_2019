@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'day_two'
+require 'day_two'
 
 class DayTwoTest < Minitest::Test
   def test_empty_array
