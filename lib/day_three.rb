@@ -1,6 +1,6 @@
 class String
   def to_instruction
-    Instruction.new(chr, self[1..length].to_i)
+    WireInstruction.new(chr, self[1..length].to_i)
   end
 end
 
@@ -36,7 +36,7 @@ class DayThree
   end
 end
 
-class Instruction
+class WireInstruction
   attr_reader :direction, :magnitude
 
   def initialize direction, magnitude

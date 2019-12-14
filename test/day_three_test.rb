@@ -3,7 +3,7 @@ require 'day_three'
 
 class DayThreeTest < Minitest::Test
   def test_logging_points
-    board = WirePositions.new([Instruction.new('R', 1), Instruction.new('U', 1), Instruction.new('L', 1), Instruction.new('D', 1)])
+    board = WirePositions.new([WireInstruction.new('R', 1), WireInstruction.new('U', 1), WireInstruction.new('L', 1), WireInstruction.new('D', 1)])
     assert_equal Point.new(0,0), board.first
     assert_equal Point.new(1,0), board.entries[1]
     assert_equal Point.new(1,1), board.entries[2]
@@ -12,14 +12,14 @@ class DayThreeTest < Minitest::Test
   end
 
   def test_moving_multiple_spaces
-    board = WirePositions.new([Instruction.new('R', 2)])
+    board = WirePositions.new([WireInstruction.new('R', 2)])
     assert_equal Point.new(1, 0), board.entries[1]
     assert_equal Point.new(2, 0), board.entries[2]
   end
 
   def test_intersections_drops_until_divergence
-    first_board = WirePositions.new([Instruction.new('U', 1), Instruction.new('R', 1)])
-    second_board = WirePositions.new([Instruction.new('R', 1), Instruction.new('U', 1)])
+    first_board = WirePositions.new([WireInstruction.new('U', 1), WireInstruction.new('R', 1)])
+    second_board = WirePositions.new([WireInstruction.new('R', 1), WireInstruction.new('U', 1)])
     assert_equal Point.new(1, 1), first_board.intersections_with(second_board).first
   end
 
@@ -50,7 +50,7 @@ INPUT
   end
 
   def test_total_steps
-    board = WirePositions.new([Instruction.new('U', 1), Instruction.new('R', 1), Instruction.new('D', 1)])
+    board = WirePositions.new([WireInstruction.new('U', 1), WireInstruction.new('R', 1), WireInstruction.new('D', 1)])
     assert_equal 3, board.steps_taken(board.entries.last)
   end
 

@@ -32,48 +32,93 @@ class IntCodeComputer
   end
 end
 
-class Exit
-  def initialize(_program)
+class Instruction
+  attr_reader :second_operand, :store_location, :first_operand, :program, :first_parameter, :second_parameter
 
+  INSTRUCTIONS = []
+
+  def self.for(op_code)
+    INSTRUCTIONS.find(->{ raise "no instruction for code #{code}"}) { |instruction| instruction.code == op_code % 100 }
   end
+
+  def self.code(code=nil)
+    if code
+      @code = code
+      INSTRUCTIONS << self
+    end
+    @code
+  end
+
+  def self.parameter_count(count=nil)
+    @parameter_count = count if count
+    @parameter_count
+  end
+
+  def initialize(program)
+    @program = program
+    @first_parameter = @program.first_parameter if self.class.parameter_count > 0
+    @second_parameter = @program.second_parameter if self.class.parameter_count > 1
+    @store_location = @program.write_parameter if self.class.parameter_count > 2
+  end
+
+  def store(value)
+    program[store_location] = value
+  end
+end
+
+class Exit < Instruction
+  code 99
+  parameter_count 0
 
   def process
     throw(:exit)
   end
 end
 
-class Multiplication
-  attr_reader :second_operand, :store_location, :first_operand, :program
-
-  def initialize(program)
-    @program = program
-    @first_operand = @program.first_parameter
-    @second_operand = @program.second_parameter
-    @store_location = @program.write_parameter
-  end
+class Multiplication < Instruction
+  code 2
+  parameter_count 3
 
   def process
-    program[store_location] = first_operand * second_operand
+    store(first_parameter * second_parameter)
   end
 end
 
-class Addition
-  attr_reader :second_operand, :first_operand, :store_location, :program
-
-  def initialize(program)
-    @program = program
-    @first_operand = program.first_parameter
-    @second_operand = program.second_parameter
-    @store_location = program.write_parameter
-  end
+class Addition < Instruction
+  code 1
+  parameter_count 3
 
   def process
-    program[store_location] = first_operand + second_operand
+    store(first_parameter + second_parameter)
   end
 end
 
-class Output
-  attr_reader :program
+class JumpIf < Instruction
+  def process
+    program.instruction_pointer = second_parameter if should_jump?
+  end
+end
+
+class JumpIfTrue < JumpIf
+  code 5
+  parameter_count 2
+
+  def should_jump?
+    !first_parameter.zero?
+  end
+end
+
+class JumpIfFalse < JumpIf
+  code 6
+  parameter_count 2
+
+  def should_jump?
+    first_parameter.zero?
+  end
+end
+
+class Output < Instruction
+  code 4
 
   def initialize(program)
     @program = program
@@ -84,8 +129,9 @@ class Output
   end
 end
 
-class Input
-  attr_reader :store_location, :program
+class Input < Instruction
+  code 3
+  parameter_count 1
 
   def initialize(program)
     @program = program
@@ -93,7 +139,33 @@ class Input
   end
 
   def process
-    program[store_location] = program.io.get
+    store(program.io.get)
+  end
+end
+
+class LessThan < Instruction
+  code 7
+  parameter_count 3
+
+  def process
+    if first_parameter < second_parameter
+      store(1)
+    else
+      store(0)
+    end
+  end
+end
+
+class Equality < Instruction
+  code 8
+  parameter_count 3
+
+  def process
+    if first_parameter == second_parameter
+      store(1)
+    else
+      store(0)
+    end
   end
 end
 
@@ -121,6 +193,14 @@ class Memory
     @storage
   end
 
+  def to_memory
+    self
+  end
+
+  def rewind
+    @instruction_pointer.rewind
+  end
+
   alias_method :to_a, :to_ary
   def_delegators :@storage, :[], :[]=
 end
@@ -140,6 +220,11 @@ class Program
 
   def process
     each(&:process)
+  end
+
+  def instruction_pointer=(index)
+    memory.rewind
+    index.times { memory.next_value }
   end
 
   def each
@@ -179,20 +264,7 @@ class OpCode
   end
 
   def instruction_type
-    case op_code % 100
-    when 1
-      Addition
-    when 2
-      Multiplication
-    when 4
-      Output
-    when 99
-      Exit
-    when 3
-      Input
-    else
-      raise "op code: #{op_code} not recognized"
-    end
+    Instruction.for(op_code)
   end
 end
 

@@ -5,7 +5,7 @@ class IntCodeComputerTest < Minitest::Test
   class FakeIO
     attr_reader :std_in
 
-    def initialize(input=[])
+    def initialize(input = [])
       @std_in = input
     end
 
@@ -31,7 +31,7 @@ class IntCodeComputerTest < Minitest::Test
     memory = [3, 3, 4, 666, 99]
     IntCodeComputer.new(memory, io).process
     assert_equal [99], io.std_out
-    assert_equal [3,3,4,4,99], memory
+    assert_equal [3, 3, 4, 4, 99], memory
   end
 
   def test_storing_value
@@ -42,30 +42,87 @@ class IntCodeComputerTest < Minitest::Test
   end
 
   def test_immediate_args
-    memory = [1002,4,3,4,33]
+    memory = [1002, 4, 3, 4, 33]
     computer = IntCodeComputer.new(memory)
     computer.process
-    assert_equal [1002,4,3,4,99], memory
+    assert_equal [1002, 4, 3, 4, 99], memory
   end
 
   def test_negative_immediate
-    memory = [1001,3,-944,3,99]
+    memory = [1001, 3, -944, 3, 99]
     computer = IntCodeComputer.new(memory)
     computer.process
-    assert_equal [1001,3,-944,-941,99], memory
+    assert_equal [1001, 3, -944, -941, 99], memory
+  end
+
+  def test_jump_if_true_jumps_if_parameter_is_non_zero
+    memory = [1105, 42, 5, 4, 3, 0].to_memory
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal 0, memory.next_value
+  end
+
+  def test_jump_if_true_does_not_jump_if_parameter_is_zero
+    memory = [1105, 0, 5, 4, 3, 0].to_memory
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal 4, memory.next_value
+  end
+
+  def test_jump_if_false
+    memory = [1106, 0, 5, 4, 3, 0].to_memory
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal 0, memory.next_value
+  end
+
+  def test_less_than
+    memory = [1107, 4, 5, 5, 3, 42]
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal [1107, 4, 5, 5, 3, 1], memory
+
+    memory = [1107, 5, 5, 5, 3, 42]
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal [1107, 5, 5, 5, 3, 0], memory
+  end
+
+  def test_equality
+    memory = [1108, 5, 4, 5, 3, 42]
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal [1108, 5, 4, 5, 3, 0], memory
+
+    memory = [1108, 5, 5, 5, 3, 42]
+    program = Program.new(memory, FakeIO.new).to_enum
+    program.next.process
+    assert_equal [1108, 5, 5, 5, 3, 1], memory
+  end
+
+  def test_larger_example
+    input = [3, 21, 1008, 21, 8, 20, 1005, 20, 22, 107, 8, 21, 20, 1006, 20, 31,
+             1106, 0, 36, 98, 0, 0, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104,
+             999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99]
+
+    io = FakeIO.new([7, 8, 9])
+    IntCodeComputer.new(input, io).process
+    IntCodeComputer.new(input, io).process
+    IntCodeComputer.new(input, io).process
+    assert_equal [999, 1000, 1001], io.std_out
   end
 end
 
 class OpCodeTest < Minitest::Test
   def test_retrieving_in_positional_mode
-    memory = [1,2,3,0].to_memory
+    memory = [1, 2, 3, 0].to_memory
     subject = OpCode.new(memory)
     assert_equal 3, subject.first_parameter
     assert_equal 0, subject.second_parameter
   end
 
   def test_retrieving_in_immediate_mode
-    memory = [1101,3,42,0].to_memory
+    memory = [1101, 3, 42, 0].to_memory
     subject = OpCode.new(memory)
     assert_equal 3, subject.first_parameter
     assert_equal 42, subject.second_parameter
