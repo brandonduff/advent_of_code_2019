@@ -1,33 +1,10 @@
 require 'minitest/autorun'
 require 'int_code_computer'
+require 'array_io'
 
 class IntCodeComputerTest < Minitest::Test
-  class FakeIO
-    attr_reader :std_in
-
-    def initialize(input = [])
-      @std_in = input
-    end
-
-    def get
-      std_in.shift
-    end
-
-    def put(value)
-      std_out << value
-    end
-
-    def std_in=(value)
-      @std_in = value
-    end
-
-    def std_out
-      @std_out ||= []
-    end
-  end
-
   def test_input_output
-    io = FakeIO.new([4])
+    io = ArrayIO.new([4])
     memory = [3, 3, 4, 666, 99]
     IntCodeComputer.new(memory, io).process
     assert_equal [99], io.std_out
@@ -57,45 +34,45 @@ class IntCodeComputerTest < Minitest::Test
 
   def test_jump_if_true_jumps_if_parameter_is_non_zero
     memory = [1105, 42, 5, 4, 3, 0].to_memory
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal 0, memory.next_value
   end
 
   def test_jump_if_true_does_not_jump_if_parameter_is_zero
     memory = [1105, 0, 5, 4, 3, 0].to_memory
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal 4, memory.next_value
   end
 
   def test_jump_if_false
     memory = [1106, 0, 5, 4, 3, 0].to_memory
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal 0, memory.next_value
   end
 
   def test_less_than
     memory = [1107, 4, 5, 5, 3, 42]
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal [1107, 4, 5, 5, 3, 1], memory
 
     memory = [1107, 5, 5, 5, 3, 42]
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal [1107, 5, 5, 5, 3, 0], memory
   end
 
   def test_equality
     memory = [1108, 5, 4, 5, 3, 42]
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal [1108, 5, 4, 5, 3, 0], memory
 
     memory = [1108, 5, 5, 5, 3, 42]
-    program = Program.new(memory, FakeIO.new).to_enum
+    program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
     assert_equal [1108, 5, 5, 5, 3, 1], memory
   end
@@ -105,7 +82,7 @@ class IntCodeComputerTest < Minitest::Test
              1106, 0, 36, 98, 0, 0, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104,
              999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99]
 
-    io = FakeIO.new([7, 8, 9])
+    io = ArrayIO.new([7, 8, 9])
     IntCodeComputer.new(input, io).process
     IntCodeComputer.new(input, io).process
     IntCodeComputer.new(input, io).process
