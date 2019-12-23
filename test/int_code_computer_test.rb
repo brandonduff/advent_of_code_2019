@@ -89,10 +89,22 @@ class IntCodeComputerTest < Minitest::Test
     assert_equal [999, 1000, 1001], io.std_out
   end
 
-  def test_halts_when_waiting_on_input
-    memory = [3,0]
-    IntCodeComputer.new(memory, ArrayIO.new([])).process
-    assert_equal [3,0], memory
+  def test_stops_processing_when_waiting_on_input
+    memory = [3,0,99]
+    program = IntCodeComputer.new(memory, ArrayIO.new([]))
+    program.process
+    assert_equal [3,0,99], memory
+    refute program.halted?
+  end
+
+  def test_get_next_output
+    memory = [4,5,4,6,99,42,43]
+    io = ArrayIO.new
+    program = IntCodeComputer.new(memory, io)
+    program.get_next_output
+    assert_equal 42, io.last_output
+    program.get_next_output
+    assert_equal 43, io.last_output
   end
 end
 

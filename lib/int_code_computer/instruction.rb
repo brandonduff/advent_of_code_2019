@@ -38,6 +38,7 @@ class Exit < Instruction
   parameter_count 0
 
   def process
+    program.halted = true
     throw(:exit)
   end
 end
@@ -107,7 +108,7 @@ class Input < Instruction
 
   def process
     input = program.io.get
-    Exit.new(program).process if input.nil?
+    throw(:exit) if input.nil?
     store(input)
   end
 end

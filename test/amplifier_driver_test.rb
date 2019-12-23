@@ -42,5 +42,22 @@ class AmplifierDriverTest < Minitest::Test
     end.max { |a,b| a.last <=> b.last }
     p result
   end
+
+  def test_feedback_mode
+    phase_setting_sequence = [9,8,7,6,5]
+    program = [3,26,1001,26,-4,26,3,27,1002,27,2,27,1,27,26,
+               27,4,27,1001,28,-1,28,1005,28,6,99,0,0,5]
+    driver = AmplifierDriver.build(program: program, phase_settings: phase_setting_sequence, mode: :feedback)
+    assert_equal 139629729, driver.result
+  end
+
+  def test_part_two
+    skip
+    program = File.read('day_seven_input.txt').split(',').map(&:to_i)
+    result = [5,6,7,8,9].permutation(5).map do |phase_setting|
+      [phase_setting, AmplifierDriver.build(program: program, phase_settings: phase_setting, mode: :feedback).result]
+    end.max { |a,b| a.last <=> b.last }
+    p result
+  end
 end
 

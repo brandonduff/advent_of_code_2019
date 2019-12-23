@@ -3,12 +3,15 @@ class Program
   include Enumerable
   extend Forwardable
 
+  attr_writer :halted
+
   def_delegators :@memory, :[], :[]=
   def_delegators :@current_op_code, :first_parameter, :second_parameter, :write_parameter
 
   def initialize(raw_memory, io)
     @memory = raw_memory.to_memory
     @io = io
+    @halted = false
   end
 
   def process
@@ -20,10 +23,25 @@ class Program
     index.times { memory.next_value }
   end
 
+  def halted?
+    @halted
+  end
+
   def each
     loop do
-      @current_op_code = OpCode.new(memory)
-      yield @current_op_code.instruction_type.new(self)
+      yield next_instruction
     end
+  end
+
+  def advance_to_next_output
+    next_instruction.process
+    until @current_op_code.instruction_type == Output do
+      next_instruction.process
+    end
+  end
+
+  def next_instruction
+    @current_op_code = OpCode.new(memory)
+    @current_op_code.instruction_type.new(self)
   end
 end

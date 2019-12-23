@@ -25,11 +25,24 @@ class IntCodeComputer
   end
 
   def process
-    program = Program.new(input, io)
     catch(:exit) do
       program.process
     end
     program.memory
+  end
+
+  def get_next_output
+    catch(:exit) do
+      program.advance_to_next_output
+    end
+  end
+
+  def halted?
+    program.halted?
+  end
+
+  def program
+    @program ||= Program.new(input, io)
   end
 end
 
