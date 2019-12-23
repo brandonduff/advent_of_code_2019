@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day_six_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/day_six.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/day_six_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +15,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/day_one.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/day_two_test.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -34,28 +24,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/day_two.rb">
+        <entry file="file://$PROJECT_DIR$/lib/day_six.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/day_three.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="1296">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/day_six.rb">
+        <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+            <state relative-caret-position="256">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="136" column="3" selection-start-line="136" selection-start-column="3" selection-end-line="136" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/int_code_computer_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/day_six_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+            <state relative-caret-position="301">
+              <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -74,15 +73,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
               <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/day_three_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -151,12 +141,13 @@
         <option value="$PROJECT_DIR$/test/day_two_test.rb" />
         <option value="$PROJECT_DIR$/lib/day_three.rb" />
         <option value="$PROJECT_DIR$/test/day_three_test.rb" />
-        <option value="$PROJECT_DIR$/lib/int_code_computer.rb" />
         <option value="$PROJECT_DIR$/test/int_code_computer_test.rb" />
         <option value="$PROJECT_DIR$/day_five_test.rb" />
         <option value="$PROJECT_DIR$/day_six_input.txt" />
-        <option value="$PROJECT_DIR$/test/day_six_test.rb" />
         <option value="$PROJECT_DIR$/lib/day_six.rb" />
+        <option value="$PROJECT_DIR$/test/day_six_test.rb" />
+        <option value="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" />
+        <option value="$PROJECT_DIR$/lib/int_code_computer.rb" />
       </list>
     </option>
   </component>
@@ -189,6 +180,12 @@
             <path>
               <item name="advent_of_code_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="advent_of_code_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="int_code_computer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="advent_of_code_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="advent_of_code_2019" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +208,21 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; RVM: ruby-2.6.0 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="2.6.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="advent_of_code_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; RVM: ruby-2.6.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="2.6.0" type="462c0819:PsiDirectoryNode" />
+              <item name="rubygems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="advent_of_code_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; RVM: ruby-2.6.0 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="2.6.0" type="462c0819:PsiDirectoryNode" />
+              <item name="rubygems" type="462c0819:PsiDirectoryNode" />
+              <item name="core_ext" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="advent_of_code_2019" type="b2602c69:ProjectViewProjectNode" />
@@ -278,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code">
     <configuration name="day_five_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="advent_of_code" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -355,6 +367,35 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
+    <configuration name="Run test 'int_code_computer_test': advent_of_code" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <module name="advent_of_code" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/int_code_computer_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_adding_neighbors: advent_of_code" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="advent_of_code" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -384,49 +425,20 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_storing_value: advent_of_code" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <module name="advent_of_code" />
-      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/int_code_computer_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_storing_value" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_storing_value: advent_of_code" />
       <item itemvalue="Ruby.day_five_test" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'DaySixTest': advent_of_code" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_adding_neighbors: advent_of_code" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'DaySixTest': advent_of_code" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_adding_neighbors: advent_of_code" />
         <item itemvalue="Ruby.day_five_test" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_storing_value: advent_of_code" />
       </list>
     </recent_temporary>
   </component>
@@ -445,7 +457,7 @@
       <workItem from="1575602348886" duration="227000" />
       <workItem from="1576117011244" duration="40000" />
       <workItem from="1576117080075" duration="636000" />
-      <workItem from="1576117898809" duration="29892000" />
+      <workItem from="1576117898809" duration="31226000" />
     </task>
     <task id="LOCAL-00001" summary="Add day one and day two">
       <created>1576117107410</created>
@@ -482,55 +494,62 @@
       <option name="project" value="LOCAL" />
       <updated>1576360657695</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Day six">
+      <created>1576958220694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576958220694</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 49m 29s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 24m 42s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 50m 04s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 25m 21s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 50m 19s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 25m 42s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 50m 21s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 26m 41s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 51m 04s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 26m 50s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 52m 19s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 26m 57s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 53m 19s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 27m 07s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 53m 50s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 28m 00s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 53m 59s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 28m 14s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.21 at 12h 54m 23s.xml">
-      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'int_code_computer_test'__advent_of_code - 2019.12.23 at 11h 29m 08s.xml">
+      <configuration name="Run test 'int_code_computer_test': advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34911000" />
+    <option name="totallyTimeSpent" value="36245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23305085" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23305085" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,11 +575,12 @@
     <MESSAGE value="Add input/output instructions to computer" />
     <MESSAGE value="Day 5 part one" />
     <MESSAGE value="Day 5 part two" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 5 part two" />
+    <MESSAGE value="Day six" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day six" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/advent_of_code@day_one.rcov" NAME="day_one Coverage Results" MODIFIED="1575347103757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__int_code_computer_test___advent_of_code.rcov" NAME="Run test 'int_code_computer_test': advent_of_code Coverage Results" MODIFIED="1576123680480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__int_code_computer_test___advent_of_code.rcov" NAME="Run test 'int_code_computer_test': advent_of_code Coverage Results" MODIFIED="1577125797529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@day_five_test.rcov" NAME="day_five_test Coverage Results" MODIFIED="1576360203976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_adding_neighbors__advent_of_code.rcov" NAME="test_adding_neighbors: advent_of_code Coverage Results" MODIFIED="1576954407831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__DayTwoTest___advent_of_code.rcov" NAME="Run test 'DayTwoTest': advent_of_code Coverage Results" MODIFIED="1576117617688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
@@ -630,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/day_four_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -648,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/int_code_computer_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -716,15 +722,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/day_six_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+        <state relative-caret-position="301">
+          <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/day_six.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+        <state relative-caret-position="1296">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/int_code_computer_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.6.0/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="136" column="3" selection-start-line="136" selection-start-column="3" selection-end-line="136" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
