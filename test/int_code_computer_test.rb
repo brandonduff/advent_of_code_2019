@@ -88,6 +88,12 @@ class IntCodeComputerTest < Minitest::Test
     IntCodeComputer.new(input, io).process
     assert_equal [999, 1000, 1001], io.std_out
   end
+
+  def test_halts_when_waiting_on_input
+    memory = [3,0]
+    IntCodeComputer.new(memory, ArrayIO.new([])).process
+    assert_equal [3,0], memory
+  end
 end
 
 class OpCodeTest < Minitest::Test
