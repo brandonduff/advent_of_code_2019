@@ -17,6 +17,14 @@ class ArrayIO
     @std_in = value
   end
 
+  def add_input(input)
+    std_in << input
+  end
+
+  def last_output
+    std_out.last
+  end
+
   def std_out
     @std_out ||= []
   end
