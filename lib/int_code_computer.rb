@@ -40,10 +40,4 @@ class IntCodeComputer
   def program
     @program ||= Program.new(input, io)
   end
-
-  private
-
-  def trapping_exit
-    catch(:exit) { yield }
-  end
 end
