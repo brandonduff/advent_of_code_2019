@@ -107,9 +107,7 @@ class Input < Instruction
   end
 
   def process
-    input = program.io.get
-    throw(:exit) if input.nil?
-    store(input)
+    store(program.io.get)
   end
 end
 
