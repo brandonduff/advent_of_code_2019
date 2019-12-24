@@ -30,12 +30,15 @@ class Program
   def each
     loop do
       yield next_instruction
+      raise StopIteration if halted?
     end
   end
 
   def advance_to_next_output
-    next_instruction.process
-    next_instruction.process until @current_op_code.instruction_type == Output
+    find do |instruction|
+      instruction.process
+      instruction.is_a?(Output)
+    end
   end
 
   def next_instruction

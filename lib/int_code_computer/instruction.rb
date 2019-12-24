@@ -39,7 +39,6 @@ class Exit < Instruction
 
   def process
     program.halted = true
-    throw(:exit)
   end
 end
 

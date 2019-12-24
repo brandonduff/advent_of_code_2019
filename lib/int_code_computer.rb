@@ -25,16 +25,12 @@ class IntCodeComputer
   end
 
   def process
-    trapping_exit do
-      program.process
-    end
+    program.process
     program.memory
   end
 
   def get_next_output
-    trapping_exit do
-      program.advance_to_next_output
-    end
+    program.advance_to_next_output
   end
 
   def halted?

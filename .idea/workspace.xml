@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="" />
+    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/program.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/program.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,26 +18,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/amplifier_driver.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="158">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/amplifier_driver_test.rb">
+        <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="72">
+              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -40,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/int_code_computer_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="105" column="22" lean-forward="true" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+            <state relative-caret-position="75">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -58,26 +54,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/int_code_computer/op_code.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="274">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/int_code_computer/program.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="263">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day_seven_input.txt">
+        <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/enumerable.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1206" lean-forward="true" selection-start-column="1206" selection-end-column="1206" />
+            <state relative-caret-position="375">
+              <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/kernel.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="4542" column="8" selection-start-line="4542" selection-start-column="8" selection-end-line="4542" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/stop_iteration.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -85,17 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/int_code_computer/memory.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="158">
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -104,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,4</find>
       <find>third_param</find>
       <find>class Mem</find>
       <find>program</find>
@@ -129,11 +133,12 @@
       <find>code 5</find>
       <find>input</find>
       <find>halt</find>
-      <find>exit</find>
       <find>instruction_pointer=</find>
       <find>ex</find>
-      <find>halted</find>
       <find>Output</find>
+      <find>exit</find>
+      <find>halted</find>
+      <find>Outup</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -167,14 +172,14 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.rb" />
         <option value="$PROJECT_DIR$/day_seven_input.txt" />
         <option value="$PROJECT_DIR$/lib/int_code_computer/memory.rb" />
-        <option value="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" />
         <option value="$PROJECT_DIR$/lib/array_io.rb" />
         <option value="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" />
-        <option value="$PROJECT_DIR$/test/int_code_computer_test.rb" />
-        <option value="$PROJECT_DIR$/lib/int_code_computer/program.rb" />
         <option value="$PROJECT_DIR$/test/amplifier_driver_test.rb" />
         <option value="$PROJECT_DIR$/lib/amplifier_driver.rb" />
+        <option value="$PROJECT_DIR$/test/int_code_computer_test.rb" />
+        <option value="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" />
         <option value="$PROJECT_DIR$/lib/int_code_computer.rb" />
+        <option value="$PROJECT_DIR$/lib/int_code_computer/program.rb" />
       </list>
     </option>
   </component>
@@ -505,7 +510,7 @@
       <workItem from="1575602348886" duration="227000" />
       <workItem from="1576117011244" duration="40000" />
       <workItem from="1576117080075" duration="636000" />
-      <workItem from="1576117898809" duration="48869000" />
+      <workItem from="1576117898809" duration="49757000" />
     </task>
     <task id="LOCAL-00001" summary="Add day one and day two">
       <created>1576117107410</created>
@@ -591,43 +596,57 @@
       <option name="project" value="LOCAL" />
       <updated>1577217755893</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Minor refactoring&#10;&#10;- Remove unused console IO">
+      <created>1577217873173</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577217873173</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Don't need to stop if out of input&#10;&#10;- Might be a good idea, but overengineering at this point. Clients know&#10;  to not have input instructions if there isn't input.">
+      <created>1577218073292</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577218073292</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_get_next_output__advent_of_code - 2019.12.23 at 16h 16m 19s.xml">
-      <configuration name="test_get_next_output: advent_of_code" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_feedback_mode__advent_of_code - 2019.12.23 at 16h 16m 23s.xml">
-      <configuration name="test_feedback_mode: advent_of_code" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_feedback_mode__advent_of_code - 2019.12.23 at 16h 16m 30s.xml">
-      <configuration name="test_feedback_mode: advent_of_code" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_feedback_mode__advent_of_code - 2019.12.23 at 16h 16m 31s.xml">
-      <configuration name="test_feedback_mode: advent_of_code" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_part_two__advent_of_code - 2019.12.23 at 16h 17m 14s.xml">
-      <configuration name="test_part_two: advent_of_code" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 00m 16s.xml">
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 12m 51s.xml">
       <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 01m 14s.xml">
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 13m 16s.xml">
       <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 01m 37s.xml">
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 13m 24s.xml">
       <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 01m 40s.xml">
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 13m 47s.xml">
       <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 01m 54s.xml">
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 15m 41s.xml">
+      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 16m 02s.xml">
+      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 16m 33s.xml">
+      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 17m 09s.xml">
+      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 17m 23s.xml">
+      <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_tests_in_test__advent_of_code - 2019.12.24 at 13h 17m 36s.xml">
       <configuration name="All tests in test: advent_of_code" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53888000" />
+    <option name="totallyTimeSpent" value="54776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -672,18 +691,8 @@
     <MESSAGE value="Halt if we don't have input&#10;&#10;- Needed for Day7 stuff. We _should_ be able to pick up where we left off" />
     <MESSAGE value="Day 7 part 2&#10;&#10;- Could use some refactoring around catch(:exit) and maybe some amplifier&#10;  driver duplication" />
     <MESSAGE value="Minor refactoring&#10;&#10;- Remove unused console IO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring&#10;&#10;- Remove unused console IO" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb</url>
-          <line>65</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Don't need to stop if out of input&#10;&#10;- Might be a good idea, but overengineering at this point. Clients know&#10;  to not have input instructions if there isn't input." />
+    <option name="LAST_COMMIT_MESSAGE" value="Don't need to stop if out of input&#10;&#10;- Might be a good idea, but overengineering at this point. Clients know&#10;  to not have input instructions if there isn't input." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_finding_best_phase_settings__advent_of_code.rcov" NAME="test_finding_best_phase_settings: advent_of_code Coverage Results" MODIFIED="1577131534733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
@@ -699,7 +708,7 @@
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_phase_settings__advent_of_code.rcov" NAME="test_phase_settings: advent_of_code Coverage Results" MODIFIED="1577129789678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_storing_value__advent_of_code.rcov" NAME="test_storing_value: advent_of_code Coverage Results" MODIFIED="1576351262876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_stops_processing_when_waiting_on_input__advent_of_code.rcov" NAME="test_stops_processing_when_waiting_on_input: advent_of_code Coverage Results" MODIFIED="1577139015891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1577217822363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1577218679982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_sample_input__advent_of_code.rcov" NAME="test_sample_input: advent_of_code Coverage Results" MODIFIED="1577128767976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_instruction_list__advent_of_code.rcov" NAME="test_instruction_list: advent_of_code Coverage Results" MODIFIED="1576121997919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_feedback_mode__advent_of_code.rcov" NAME="test_feedback_mode: advent_of_code Coverage Results" MODIFIED="1577142990630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
@@ -721,13 +730,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/enumerable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="874" column="8" selection-start-line="874" selection-start-column="8" selection-end-line="874" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/day_one_input.txt" />
     <entry file="file://$PROJECT_DIR$/lib/day_three_part_one.txt" />
     <entry file="file://$PROJECT_DIR$/lib/day_two_input.txt" />
@@ -874,31 +876,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/day_seven_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1206" lean-forward="true" selection-start-column="1206" selection-end-column="1206" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/object.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/array_io.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -909,45 +890,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/op_code.rb">
+    <entry file="file://$PROJECT_DIR$/test/amplifier_driver_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="-243">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_seven_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1206" lean-forward="true" selection-start-column="1206" selection-end-column="1206" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/int_code_computer_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="105" column="22" lean-forward="true" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/amplifier_driver_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/amplifier_driver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/program.rb">
+    <entry file="file://$PROJECT_DIR$/lib/array_io.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/amplifier_driver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/int_code_computer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="72">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/stop_iteration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/kernel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="4542" column="8" selection-start-line="4542" selection-start-column="8" selection-end-line="4542" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/op_code.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/enumerable.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/instruction.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/int_code_computer/program.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
