@@ -19,20 +19,20 @@ class IntCodeComputer
     new(input).process
   end
 
-  def initialize(input, io = ComputerIO.new)
+  def initialize(input, io = ArrayIO.new)
     @input = input
     @io = io
   end
 
   def process
-    catch(:exit) do
+    trapping_exit do
       program.process
     end
     program.memory
   end
 
   def get_next_output
-    catch(:exit) do
+    trapping_exit do
       program.advance_to_next_output
     end
   end
@@ -44,14 +44,10 @@ class IntCodeComputer
   def program
     @program ||= Program.new(input, io)
   end
-end
 
-class ComputerIO
-  def get
-    STDIN.getch.to_i
-  end
+  private
 
-  def put(value)
-    puts value
+  def trapping_exit
+    catch(:exit) { yield }
   end
 end

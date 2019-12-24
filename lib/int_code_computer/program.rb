@@ -35,9 +35,7 @@ class Program
 
   def advance_to_next_output
     next_instruction.process
-    until @current_op_code.instruction_type == Output do
-      next_instruction.process
-    end
+    next_instruction.process until @current_op_code.instruction_type == Output
   end
 
   def next_instruction
