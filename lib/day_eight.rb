@@ -31,7 +31,7 @@ class Image
           ' '
         end
         print " "
-      endr
+      end
       puts "\n"
     end
   end
