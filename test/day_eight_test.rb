@@ -27,4 +27,26 @@ class Day8Test < Minitest::Test
     layer = Layer.new([1,2,0,0,1,2,3])
     assert_equal 4, layer.value
   end
+
+  def test_collapsing_two_layers
+    first_layer = Layer.new([0,0,1,2])
+    second_layer = Layer.new([1,1,2,0])
+    assert_equal [0,0,1,0], first_layer.collapse_into(second_layer)
+  end
+
+  def test_collapsing_layers
+    input = [0,2,2,2,1,1,2,2,2,2,1,2,0,0,0,0]
+    width = 2
+    height = 2
+    image = Image.new(input, width, height)
+    collapsed_layer = image.collapsed_layer
+    assert_equal [0,1,1,0], collapsed_layer
+  end
+
+  def test_part_two
+    skip
+    input = File.read('day_eight_input.txt').split('').map(&:to_i)
+    image = Image.new(input, 25, 6)
+    image.write_out
+  end
 end
