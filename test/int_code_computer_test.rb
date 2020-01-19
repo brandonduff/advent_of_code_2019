@@ -12,17 +12,17 @@ class IntCodeComputerTest < Minitest::Test
   end
 
   def test_storing_value
-    memory = [1001, 1, 1, 0]
+    memory = [1001, 1, 1, 0, 99]
     computer = IntCodeComputer.new(memory)
     computer.process
     assert_equal 2, memory[0]
   end
 
   def test_immediate_args
-    memory = [1002, 4, 3, 4, 33]
+    memory = [1002, 4, 3, 4, 33, 99]
     computer = IntCodeComputer.new(memory)
     computer.process
-    assert_equal [1002, 4, 3, 4, 99], memory
+    assert_equal [1002, 4, 3, 4, 99, 99], memory
   end
 
   def test_negative_immediate
@@ -54,27 +54,27 @@ class IntCodeComputerTest < Minitest::Test
   end
 
   def test_less_than
-    memory = [1107, 4, 5, 5, 3, 42]
+    memory = [1107, 4, 5, 5, 3, 42, 99]
     program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
-    assert_equal [1107, 4, 5, 5, 3, 1], memory
+    assert_equal [1107, 4, 5, 5, 3, 1, 99], memory
 
-    memory = [1107, 5, 5, 5, 3, 42]
+    memory = [1107, 5, 5, 5, 3, 42, 99]
     program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
-    assert_equal [1107, 5, 5, 5, 3, 0], memory
+    assert_equal [1107, 5, 5, 5, 3, 0, 99], memory
   end
 
   def test_equality
-    memory = [1108, 5, 4, 5, 3, 42]
+    memory = [1108, 5, 4, 5, 3, 42, 99]
     program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
-    assert_equal [1108, 5, 4, 5, 3, 0], memory
+    assert_equal [1108, 5, 4, 5, 3, 0, 99], memory
 
-    memory = [1108, 5, 5, 5, 3, 42]
+    memory = [1108, 5, 5, 5, 3, 42, 99]
     program = Program.new(memory, ArrayIO.new).to_enum
     program.next.process
-    assert_equal [1108, 5, 5, 5, 3, 1], memory
+    assert_equal [1108, 5, 5, 5, 3, 1, 99], memory
   end
 
   def test_larger_example
@@ -90,7 +90,7 @@ class IntCodeComputerTest < Minitest::Test
   end
 
   def test_get_next_output
-    memory = [4,5,4,6,99,42,43]
+    memory = [4,5,4,6,99,42,43, 99]
     io = ArrayIO.new
     program = IntCodeComputer.new(memory, io)
     program.get_next_output

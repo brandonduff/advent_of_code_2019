@@ -69,6 +69,8 @@ module DaySix
 
     def initialize(code)
       @code = code
+      @visited = false
+      @distance = nil
     end
 
     def ==(other)

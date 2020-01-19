@@ -3,11 +3,13 @@ class Memory
 
   def initialize(storage)
     @storage = storage
-    @instruction_pointer = storage.to_enum
+    @instruction_pointer = @storage.to_enum
   end
 
   def next_value
     @instruction_pointer.next
+  rescue StopIteration
+    0
   end
 
   def next_value_at

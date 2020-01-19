@@ -54,7 +54,7 @@ class WirePositions
   end
 
   def each &block
-    plotted_points.each &block
+    plotted_points.each(&block)
   end
 
   def intersections_with other_board

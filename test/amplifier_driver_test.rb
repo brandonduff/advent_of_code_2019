@@ -5,7 +5,7 @@ class AmplifierDriverTest < Minitest::Test
   def test_can_run_two_amplifiers
     phase_settings = [1,2]
     # take two numbers (input instruction, phase setting), add them and output result
-    program = [3, 0, 3, 1, 1, 0, 1, 3, 4, 3]
+    program = [3, 0, 3, 1, 1, 0, 1, 3, 4, 3, 99]
 
     driver = AmplifierDriver.build(program: program, phase_settings: phase_settings)
     assert_equal 1 + 2, driver.result

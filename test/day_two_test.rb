@@ -2,16 +2,12 @@ require 'minitest/autorun'
 require 'day_two'
 
 class DayTwoTest < Minitest::Test
-  def test_empty_array
-    assert_equal [], DayTwo.call([])
-  end
-
   def test_add
-    assert_equal [2, 0, 0, 0], DayTwo.call([1, 0, 0, 0])
+    assert_equal [2, 0, 0, 0, 99], DayTwo.call([1, 0, 0, 0, 99])
   end
 
   def test_multiply
-    assert_equal [2, 4, 0, 1], DayTwo.call([2, 0, 0, 1])
+    assert_equal [2, 4, 0, 1, 99], DayTwo.call([2, 0, 0, 1, 99])
   end
 
   def test_exit_code
@@ -32,8 +28,9 @@ class DayTwoTest < Minitest::Test
   end
 
   def test_part_one
+    skip
     input = File.read('day_two_input.txt').split(',').map(&:to_i)
-    # puts DayTwo.call(input).join(",")
+    puts DayTwo.call(input).join(",")
   end
 
   def test_part_two
