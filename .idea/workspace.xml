@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="">
+    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="Fix typo">
+      <change beforePath="$PROJECT_DIR$/.idea/advent_of_code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/advent_of_code.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>mass</find>
-      <find>store_value</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_part_two">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code">
     <configuration type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
       <module name="advent_of_code" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -209,14 +205,12 @@
       <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_storing_value: advent_of_code" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.day_8_test" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_part_two" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_part_two" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.day_8_test" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_part_two" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_storing_value: advent_of_code" />
       </list>
@@ -244,6 +238,9 @@
       <workItem from="1576513562568" duration="1027000" />
       <workItem from="1576706606992" duration="2518000" />
       <workItem from="1578068678764" duration="3422000" />
+      <workItem from="1579725888109" duration="571000" />
+      <workItem from="1579732462943" duration="556000" />
+      <workItem from="1581958769138" duration="2488000" />
     </task>
     <task id="LOCAL-00001" summary="Add day one and day two">
       <created>1576117107410</created>
@@ -311,7 +308,7 @@
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__DayTwoTest___advent_of_code.rcov" NAME="Run test 'DayTwoTest': advent_of_code Coverage Results" MODIFIED="1576117617688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@day_one.rcov" NAME="day_one Coverage Results" MODIFIED="1575347103757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_instruction_list__advent_of_code.rcov" NAME="test_instruction_list: advent_of_code Coverage Results" MODIFIED="1576121997919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1578344505113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1582934269487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@test_part_two__advent_of_code.rcov" NAME="test_part_two: advent_of_code Coverage Results" MODIFIED="1575349523938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_part_two.rcov" NAME="test_part_two Coverage Results" MODIFIED="1578344941235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__int_code_computer_test___advent_of_code.rcov" NAME="Run test 'int_code_computer_test': advent_of_code Coverage Results" MODIFIED="1576123680480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />

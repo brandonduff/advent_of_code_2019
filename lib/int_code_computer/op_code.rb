@@ -11,22 +11,33 @@ class OpCode
   end
 
   def first_parameter
-    if (op_code / 100) % 10 == 1
-      memory.next_value
-    else
-      memory.next_value_at
-    end
+    Parameter.new((op_code / 100) % 10, memory).value
   end
 
   def second_parameter
-    if (op_code / 1000) % 10 == 1
-      memory.next_value
-    else
-      memory.next_value_at
-    end
+    Parameter.new((op_code / 1000) % 10, memory).value
   end
 
   def instruction_type
     Instruction.for(op_code)
+  end
+
+  class Parameter
+    def initialize(mode, memory)
+      @mode = mode
+      @memory = memory
+    end
+
+    def value
+      if mode.zero?
+        memory.next_value_at
+      else
+        memory.next_value
+      end
+    end
+
+    private
+
+    attr_reader :memory, :mode
   end
 end
