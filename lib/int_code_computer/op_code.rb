@@ -11,21 +11,22 @@ class OpCode
   end
 
   def first_parameter
-    Parameter.new((op_code / 100) % 10, memory).value
+    Parameter.new((op_code / 100) % 10, memory)
   end
 
   def second_parameter
-    Parameter.new((op_code / 1000) % 10, memory).value
+    Parameter.new((op_code / 1000) % 10, memory)
   end
 
   def instruction_type
     Instruction.for(op_code)
   end
 
-  class Parameter
+  class Parameter < DelegateClass(Integer)
     def initialize(mode, memory)
       @mode = mode
       @memory = memory
+      super(value)
     end
 
     def value
