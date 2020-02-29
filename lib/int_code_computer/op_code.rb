@@ -1,9 +1,9 @@
 class OpCode
-  attr_reader :memory, :op_code
+  attr_reader :op_code, :program
 
-  def initialize(memory)
-    @memory = memory
-    @op_code = @memory.next_value
+  def initialize(program)
+    @program = program
+    @op_code = memory.next_value
   end
 
   def write_parameter
@@ -22,23 +22,13 @@ class OpCode
     Instruction.for(op_code)
   end
 
-  class Parameter < DelegateClass(Integer)
-    def initialize(mode, memory)
-      @mode = mode
-      @memory = memory
-      super(value)
-    end
+  def instruction
+    instruction_type.new(program)
+  end
 
-    def value
-      if mode.zero?
-        memory.next_value_at
-      else
-        memory.next_value
-      end
-    end
+  private
 
-    private
-
-    attr_reader :memory, :mode
+  def memory
+    program.memory
   end
 end

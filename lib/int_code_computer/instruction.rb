@@ -135,3 +135,12 @@ class Equality < Instruction
     end
   end
 end
+
+class AdjustRelativeBase < Instruction
+  code 9
+  parameter_count 1
+
+  def process
+    program.memory.offset += first_parameter
+  end
+end

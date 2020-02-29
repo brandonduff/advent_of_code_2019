@@ -1,11 +1,12 @@
 class Memory
   extend Forwardable
 
-  attr_writer :offset
+  attr_accessor :offset
 
   def initialize(storage)
     @storage = storage
     @instruction_pointer = @storage.to_enum
+    @offset = 0
   end
 
   def next_value
@@ -15,11 +16,11 @@ class Memory
   end
 
   def next_value_at
-    @storage[next_value]
+    fetch(next_value)
   end
 
   def next_relative_value
-    @storage[next_value + @offset]
+    fetch(next_value + @offset)
   end
 
   def ==(other)
@@ -40,4 +41,10 @@ class Memory
 
   alias_method :to_a, :to_ary
   def_delegators :@storage, :[], :[]=
+
+  private
+
+  def fetch(position)
+    @storage.fetch(position, 0)
+  end
 end

@@ -42,7 +42,7 @@ class Program
   end
 
   def next_instruction
-    @current_op_code = OpCode.new(memory)
-    @current_op_code.instruction_type.new(self)
+    @current_op_code = OpCode.new(self)
+    @current_op_code.instruction
   end
 end
