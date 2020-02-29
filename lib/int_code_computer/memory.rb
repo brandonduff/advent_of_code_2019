@@ -1,6 +1,8 @@
 class Memory
   extend Forwardable
 
+  attr_writer :offset
+
   def initialize(storage)
     @storage = storage
     @instruction_pointer = @storage.to_enum
@@ -14,6 +16,10 @@ class Memory
 
   def next_value_at
     @storage[next_value]
+  end
+
+  def next_relative_value
+    @storage[next_value + @offset]
   end
 
   def ==(other)

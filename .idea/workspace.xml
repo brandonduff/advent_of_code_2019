@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="">
+    <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="Add getting next">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/memory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/memory.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/memory_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/memory_test.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +241,7 @@
       <workItem from="1578068678764" duration="3422000" />
       <workItem from="1579725888109" duration="571000" />
       <workItem from="1579732462943" duration="556000" />
-      <workItem from="1581958769138" duration="3205000" />
+      <workItem from="1581958769138" duration="3866000" />
     </task>
     <task id="LOCAL-00001" summary="Add day one and day two">
       <created>1576117107410</created>
@@ -283,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582934296932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Use parameter instead of raw integers where possible">
+      <created>1582935133863</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582935133863</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,13 +318,14 @@
     <MESSAGE value="Day 8" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Extract Parameter class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extract Parameter class" />
+    <MESSAGE value="Use parameter instead of raw integers where possible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use parameter instead of raw integers where possible" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__DayTwoTest___advent_of_code.rcov" NAME="Run test 'DayTwoTest': advent_of_code Coverage Results" MODIFIED="1576117617688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@day_one.rcov" NAME="day_one Coverage Results" MODIFIED="1575347103757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_instruction_list__advent_of_code.rcov" NAME="test_instruction_list: advent_of_code Coverage Results" MODIFIED="1576121997919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1582935112116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1582935556217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@test_part_two__advent_of_code.rcov" NAME="test_part_two: advent_of_code Coverage Results" MODIFIED="1575349523938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_part_two.rcov" NAME="test_part_two Coverage Results" MODIFIED="1578344941235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__int_code_computer_test___advent_of_code.rcov" NAME="Run test 'int_code_computer_test': advent_of_code Coverage Results" MODIFIED="1576123680480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
