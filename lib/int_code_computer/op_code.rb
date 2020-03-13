@@ -7,8 +7,8 @@ class OpCode
   end
 
   def parameter_list
-    @parameter_list ||= instruction_type.parameter_count.to_i.times.with_object([]) do |i, result|
-      result << Parameter.new((op_code / (10 ** (i + 2))) % 10, memory, instruction_type, (i + 1))
+    @parameter_list ||= instruction_type.parameter_count.times.map do |i|
+      Parameter.new((op_code / (10 ** (i + 2))) % 10, memory, instruction_type, (i + 1))
     end
   end
 
