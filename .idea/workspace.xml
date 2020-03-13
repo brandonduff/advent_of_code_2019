@@ -7,17 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c291df49-4998-40ae-8ae5-84236e0e2a91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day_nine_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/int_code_computer/parameter.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/instruction_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/parameter_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/op_code_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/instruction.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/memory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/memory.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/op_code.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/int_code_computer/parameter.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/parameter.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/int_code_computer/program.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/int_code_computer/program.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/int_code_computer_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/int_code_computer_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/memory_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/memory_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/parameter_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/parameter_test.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_day_nine_part_two">
     <configuration name="All tests in test: advent_of_code" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="advent_of_code" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -99,36 +96,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="Run test 'int_code_computer_test': advent_of_code" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <module name="advent_of_code" />
-      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/int_code_computer_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_complex_output_with_re..." type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+    <configuration name="OpCodeTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
       <module name="advent_of_code" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
@@ -147,10 +115,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/int_code_computer_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/op_code_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_complex_output_with_relative_offset" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
@@ -186,7 +154,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_part_two" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+    <configuration name="test_day_nine_part_two" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
       <module name="advent_of_code" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
@@ -197,7 +165,7 @@
       <envs>
         <env name="JRUBY_OPTS" value="-X+O" />
       </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
@@ -205,9 +173,38 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/day_eight_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/int_code_computer_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_part_two" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_day_nine_part_two" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_write_parameter_in_rel..." type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+      <module name="advent_of_code" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/op_code_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_write_parameter_in_relative_mode" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -217,20 +214,23 @@
     </configuration>
     <list>
       <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_part_two" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_complex_output_with_re..." />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_day_nine_part_one" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_write_parameter_in_rel..." />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.OpCodeTest" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_day_nine_part_two" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_day_nine_part_two" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_day_nine_part_one" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_complex_output_with_re..." />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_part_two" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'int_code_computer_test': advent_of_code" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in test: advent_of_code" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.OpCodeTest" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_write_parameter_in_rel..." />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
@@ -253,7 +253,9 @@
       <workItem from="1578068678764" duration="3422000" />
       <workItem from="1579725888109" duration="571000" />
       <workItem from="1579732462943" duration="556000" />
-      <workItem from="1581958769138" duration="10059000" />
+      <workItem from="1581958769138" duration="24487000" />
+      <workItem from="1584031229870" duration="17000" />
+      <workItem from="1584133305864" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="Add day one and day two">
       <created>1576117107410</created>
@@ -311,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582935599353</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Movement on Day 9&#10;&#10;- OpCode/Program/Instruction/Parameter are a mess. Everything references&#10;  everything else. Need to find the right objects here.">
+      <created>1583007112111</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583007112111</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,21 +348,28 @@
     <MESSAGE value="Extract Parameter class" />
     <MESSAGE value="Use parameter instead of raw integers where possible" />
     <MESSAGE value="Add getting next relative value to Memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add getting next relative value to Memory" />
+    <MESSAGE value="Movement on Day 9&#10;&#10;- OpCode/Program/Instruction/Parameter are a mess. Everything references&#10;  everything else. Need to find the right objects here." />
+    <option name="LAST_COMMIT_MESSAGE" value="Movement on Day 9&#10;&#10;- OpCode/Program/Instruction/Parameter are a mess. Everything references&#10;  everything else. Need to find the right objects here." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1583006994298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@All_tests_in_test__advent_of_code.rcov" NAME="All tests in test: advent_of_code Coverage Results" MODIFIED="1584135296014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@test_part_two__advent_of_code.rcov" NAME="test_part_two: advent_of_code Coverage Results" MODIFIED="1575349523938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@day_8_test.rcov" NAME="day_8_test Coverage Results" MODIFIED="1578342147762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
-    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_day_nine_part_one.rcov" NAME="test_day_nine_part_one Coverage Results" MODIFIED="1583004666282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_day_nine_part_one.rcov" NAME="test_day_nine_part_one Coverage Results" MODIFIED="1584135316263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@test_multiply__advent_of_code.rcov" NAME="test_multiply: advent_of_code Coverage Results" MODIFIED="1575348422163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@Run_test__DayTwoTest___advent_of_code.rcov" NAME="Run test 'DayTwoTest': advent_of_code Coverage Results" MODIFIED="1575349399083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__DayTwoTest___advent_of_code.rcov" NAME="Run test 'DayTwoTest': advent_of_code Coverage Results" MODIFIED="1576117617688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_retrieving_in_immediat___.rcov" NAME="test_retrieving_in_immediat... Coverage Results" MODIFIED="1583537986473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code@day_one.rcov" NAME="day_one Coverage Results" MODIFIED="1575347103757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_instruction_list__advent_of_code.rcov" NAME="test_instruction_list: advent_of_code Coverage Results" MODIFIED="1576121997919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@OpCodeTest.rcov" NAME="OpCodeTest Coverage Results" MODIFIED="1583788648646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_complex_output_with_re___.rcov" NAME="test_complex_output_with_re... Coverage Results" MODIFIED="1583004094879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_write_parameter_in_rel___.rcov" NAME="test_write_parameter_in_rel... Coverage Results" MODIFIED="1583540978650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_part_two.rcov" NAME="test_part_two Coverage Results" MODIFIED="1578344941235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@Run_test__int_code_computer_test___advent_of_code.rcov" NAME="Run test 'int_code_computer_test': advent_of_code Coverage Results" MODIFIED="1576123680480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
     <SUITE FILE_PATH="coverage/advent_of_code_2019@test_storing_value__advent_of_code.rcov" NAME="test_storing_value: advent_of_code Coverage Results" MODIFIED="1576123676572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_write_parameter_relati___.rcov" NAME="test_write_parameter_relati... Coverage Results" MODIFIED="1583538125272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_day_nine_example_one.rcov" NAME="test_day_nine_example_one Coverage Results" MODIFIED="1583539399359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
+    <SUITE FILE_PATH="coverage/advent_of_code_2019@test_day_nine_part_two.rcov" NAME="test_day_nine_part_two Coverage Results" MODIFIED="1584135359518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="advent_of_code" />
   </component>
 </project>

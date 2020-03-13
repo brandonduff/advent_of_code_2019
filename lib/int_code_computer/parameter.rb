@@ -1,12 +1,20 @@
 class Parameter < DelegateClass(Integer)
-  def initialize(mode, memory, instruction=nil)
+  def initialize(mode, memory, instruction_type, position)
     @mode = ParameterMode.new(mode)
     @memory = memory
+    @instruction_type = instruction_type
+    @position = position
     super(value)
   end
 
   def value
-    if mode.positional?
+    @value ||= if position == 3 || @instruction_type == Input
+      if mode.relative?
+        memory.next_value + memory.offset
+      else
+        memory.next_value
+      end
+    elsif mode.positional?
       memory.next_value_at
     elsif mode.immediate?
       memory.next_value
@@ -19,7 +27,7 @@ class Parameter < DelegateClass(Integer)
 
   private
 
-  attr_reader :memory, :mode
+  attr_reader :memory, :mode, :position, :instruction_type
 end
 
 class ParameterMode

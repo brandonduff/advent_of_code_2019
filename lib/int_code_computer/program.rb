@@ -6,7 +6,6 @@ class Program
   attr_writer :halted
 
   def_delegators :@memory, :[], :[]=
-  def_delegators :@current_op_code, :first_parameter, :second_parameter, :write_parameter
 
   def initialize(raw_memory, io)
     @memory = raw_memory.to_memory
@@ -42,7 +41,6 @@ class Program
   end
 
   def next_instruction
-    @current_op_code = OpCode.new(self)
-    @current_op_code.instruction
+    OpCode.new(memory).next_instruction(self)
   end
 end

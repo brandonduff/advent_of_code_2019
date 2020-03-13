@@ -1,34 +1,24 @@
 class OpCode
-  attr_reader :op_code, :program
+  attr_reader :op_code, :memory
 
-  def initialize(program)
-    @program = program
+  def initialize(memory)
+    @memory = memory
     @op_code = memory.next_value
   end
 
-  def write_parameter
-    memory.next_value
+  def parameter_list
+    @parameter_list ||= instruction_type.parameter_count.to_i.times.with_object([]) do |i, result|
+      result << Parameter.new((op_code / (10 ** (i + 2))) % 10, memory, instruction_type, (i + 1))
+    end
   end
 
-  def first_parameter
-    Parameter.new((op_code / 100) % 10, memory)
-  end
-
-  def second_parameter
-    Parameter.new((op_code / 1000) % 10, memory)
-  end
-
-  def instruction_type
-    Instruction.for(op_code)
-  end
-
-  def instruction
-    instruction_type.new(program)
+  def next_instruction(program)
+    instruction_type.new(program, parameter_list)
   end
 
   private
 
-  def memory
-    program.memory
+  def instruction_type
+    Instruction.for(op_code)
   end
 end

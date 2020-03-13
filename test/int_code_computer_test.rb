@@ -108,6 +108,14 @@ class IntCodeComputerTest < Minitest::Test
     assert_equal expected_output, io.std_out
   end
 
+  def test_day_nine_example_one
+    memory = [1102,34915192,34915192,7,4,7,99,0]
+    io = ArrayIO.new
+    computer = IntCodeComputer.new(memory, io)
+    computer.process
+    assert_equal 16, io.last_output.digits.length
+  end
+
   def test_day_nine_part_one
     skip
     input = File.read('day_nine_input.txt').split(",").map(&:to_i)
@@ -116,21 +124,13 @@ class IntCodeComputerTest < Minitest::Test
     computer.process
     p io.std_out
   end
-end
 
-class OpCodeTest < Minitest::Test
-  def test_retrieving_in_positional_mode
-    memory = [1, 2, 3, 0].to_memory
-    subject = OpCode.new(Program.new(memory, ArrayIO.new))
-    assert_equal 3, subject.first_parameter
-    assert_equal 0, subject.second_parameter
-  end
-
-  def test_retrieving_in_immediate_mode
-    memory = [1101, 3, 42, 0].to_memory
-    subject = OpCode.new(Program.new(memory, ArrayIO.new))
-    assert_equal 3, subject.first_parameter
-    assert_equal 42, subject.second_parameter
-    assert_equal 0, subject.write_parameter
+  def test_day_nine_part_two
+    skip
+    input = File.read('day_nine_input.txt').split(",").map(&:to_i)
+    io = ArrayIO.new([2])
+    computer = IntCodeComputer.new(input, io)
+    computer.process
+    p io.std_out
   end
 end

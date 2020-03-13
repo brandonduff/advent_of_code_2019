@@ -1,5 +1,5 @@
 class Instruction
-  attr_reader :second_operand, :store_location, :first_operand, :program, :first_parameter, :second_parameter
+  attr_reader :program, :parameters
 
   INSTRUCTIONS = []
 
@@ -20,15 +20,13 @@ class Instruction
     @parameter_count
   end
 
-  def initialize(program)
+  def initialize(program, parameter_list)
     @program = program
-    @first_parameter = @program.first_parameter if self.class.parameter_count > 0
-    @second_parameter = @program.second_parameter if self.class.parameter_count > 1
-    @store_location = @program.write_parameter if self.class.parameter_count > 2
+    @parameters = parameter_list
   end
 
   def store(value)
-    program[store_location] = value
+    program[parameters.last] = value
   end
 end
 
@@ -47,7 +45,7 @@ class Multiplication < Instruction
   parameter_count 3
 
   def process
-    store(first_parameter * second_parameter)
+    store(parameters[0] * parameters[1])
   end
 end
 
@@ -56,13 +54,13 @@ class Addition < Instruction
   parameter_count 3
 
   def process
-    store(first_parameter + second_parameter)
+    store(parameters[0] + parameters[1])
   end
 end
 
 class JumpIf < Instruction
   def process
-    program.instruction_pointer = second_parameter if should_jump?
+    program.instruction_pointer = parameters[1] if should_jump?
   end
 end
 
@@ -71,7 +69,7 @@ class JumpIfTrue < JumpIf
   parameter_count 2
 
   def should_jump?
-    !first_parameter.zero?
+    !parameters[0].zero?
   end
 end
 
@@ -80,30 +78,22 @@ class JumpIfFalse < JumpIf
   parameter_count 2
 
   def should_jump?
-    first_parameter.zero?
+    parameters[0].zero?
   end
 end
 
 class Output < Instruction
   code 4
-
-  def initialize(program)
-    @program = program
-  end
+  parameter_count 1
 
   def process
-    program.io.put(program.first_parameter)
+    program.io.put(parameters[0])
   end
 end
 
 class Input < Instruction
   code 3
   parameter_count 1
-
-  def initialize(program)
-    @program = program
-    @store_location = program.write_parameter
-  end
 
   def process
     store(program.io.get)
@@ -115,7 +105,7 @@ class LessThan < Instruction
   parameter_count 3
 
   def process
-    if first_parameter < second_parameter
+    if parameters[0] < parameters[1]
       store(1)
     else
       store(0)
@@ -128,7 +118,7 @@ class Equality < Instruction
   parameter_count 3
 
   def process
-    if first_parameter == second_parameter
+    if parameters[0] == parameters[1]
       store(1)
     else
       store(0)
@@ -141,6 +131,6 @@ class AdjustRelativeBase < Instruction
   parameter_count 1
 
   def process
-    program.memory.offset += first_parameter
+    program.memory.offset += parameters[0]
   end
 end
